@@ -1,0 +1,128 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #59717a;
+  margin: 0;
+  padding: 40px 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+
+.steps-container {
+  display: felx;
+  flex-direction: column;
+  align-items: center;
+  /* <<< zentriert horizontal */
+  gap: 40px;
+  /* Abstand zwischen den Steps */
+  width: 100%;
+}
+
+
+/* Container, der die Steps bündelt */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 400px;
+  align-items: center;
+  /* <<< sorgt für sauberes Zentrieren */
+}
+
+/* Step */
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+  justify-content: center;
+}
+
+/* Step-Inhalt (weiße Kachel) */
+.step-content {
+  background: #fff;
+  padding: 2dvb 20px 20px 20px;
+  /* Platz links für die Nummer */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Step-Nummer sitzt AUF der Box, nicht davor */
+.step-number {
+
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.button {
+  display: inline-block;
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #777777;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  border-color: #000000;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 600px) {
+  .step {
+    flex-direction: column;
+  }
+
+  .step-number {
+    margin-bottom: 10px;
+  }
+}
+
+.loader {
+  display: none;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #000000;
+}
