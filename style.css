@@ -18,9 +18,7 @@ h1 {
   display: felx;
   flex-direction: column;
   align-items: center;
-  /* <<< zentriert horizontal */
   gap: 40px;
-  /* Abstand zwischen den Steps */
   width: 100%;
 }
 
@@ -31,10 +29,8 @@ h1 {
   flex-direction: column;
   gap: 400px;
   align-items: center;
-  /* <<< sorgt für sauberes Zentrieren */
 }
 
-/* Step */
 .step {
   display: flex;
   align-items: flex-start;
@@ -43,18 +39,15 @@ h1 {
   justify-content: center;
 }
 
-/* Step-Inhalt (weiße Kachel) */
 .step-content {
   background: #fff;
   padding: 2dvb 20px 20px 20px;
-  /* Platz links für die Nummer */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
   width: 100%;
   max-width: 800px;
 }
 
-/* Step-Nummer sitzt AUF der Box, nicht davor */
 .step-number {
 
   font-size: 24px;
@@ -72,10 +65,6 @@ h1 {
   flex-shrink: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
 
 .button {
   display: inline-block;
@@ -110,19 +99,31 @@ select:focus {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 600px) {
-  .step {
-    flex-direction: column;
-  }
-
-  .step-number {
-    margin-bottom: 10px;
-  }
-}
 
 .loader {
   display: none;
   margin-top: 10px;
   font-weight: 600;
   color: #000000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 13px 0;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
